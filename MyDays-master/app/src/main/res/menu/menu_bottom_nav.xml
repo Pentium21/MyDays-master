@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/writing_btn"
+        android:icon="@drawable/ic_writing"
+        android:enabled="true"
+        android:title="@string/writing"/>
+
+    <item
+        android:id="@+id/diary_btn"
+        android:icon="@drawable/ic_diary"
+        android:enabled="true"
+        android:title="@string/diary"
+        />
+
+    <item
+        android:id="@+id/add_btn"
+        android:icon="@drawable/ic_add"
+        android:enabled="true"
+        android:title="@string/add"
+        />
+
+    <item
+        android:id="@+id/training_btn"
+        android:icon="@drawable/ic_train"
+        android:enabled="true"
+        android:title="@string/training"
+        />
+
+    <item
+        android:id="@+id/statistics_btn"
+        android:icon="@drawable/ic_stat"
+        android:enabled="true"
+        android:title="@string/statistics"
+        />
+
+
+</menu>

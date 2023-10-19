@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="8dp"
+    tools:context=".Presentation.writing.WritingOfDaysModel">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/background_day"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/grow"
+        android:padding="4dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_data_training"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:gravity="center_horizontal"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toStartOf="@+id/tv_month_training"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textStyle="bold"
+            tools:text="17" />
+
+        <TextView
+            android:id="@+id/tv_month_training"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toStartOf="@+id/tv_year_training"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toEndOf="@+id/tv_data_training"
+            app:layout_constraintTop_toTopOf="@+id/tv_data_training"
+            android:textStyle="bold"
+            tools:text="декабря" />
+
+        <TextView
+            android:id="@+id/tv_year_training"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="24dp"
+            android:gravity="center_horizontal"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toEndOf="@+id/tv_month_training"
+            app:layout_constraintTop_toTopOf="@+id/tv_month_training"
+            android:textStyle="bold"
+            tools:text="2022" />
+
+        <TextView
+            android:id="@+id/tv_duration_of_sleep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toStartOf="@+id/iv_amount_of_water"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toEndOf="@+id/iv_duration_of_sleep"
+            app:layout_constraintTop_toTopOf="@+id/iv_duration_of_sleep"
+            tools:text="7 ч" />
+
+        <ImageView
+            android:id="@+id/iv_duration_of_sleep"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="4dp"
+            android:src="@drawable/ic_sleep_moon_and_zz"
+            app:layout_constraintEnd_toStartOf="@+id/tv_duration_of_sleep"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_achievements"
+            android:contentDescription="@string/sleep" />
+
+        <ImageView
+            android:id="@+id/iv_health"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toEndOf="@+id/tv_year_training"
+            app:layout_constraintTop_toTopOf="@+id/tv_year_training"
+            android:src="@drawable/ic_mood_5"
+            android:contentDescription="@string/smile" />
+
+        <TextView
+            android:id="@+id/tv_perc_of_completed_tasks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toEndOf="@+id/iv_perc_of_completed_tasks"
+            app:layout_constraintTop_toTopOf="@+id/iv_perc_of_completed_tasks"
+            tools:text="100%" />
+
+        <ImageView
+            android:id="@+id/iv_perc_of_completed_tasks"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            app:layout_constraintEnd_toStartOf="@+id/tv_perc_of_completed_tasks"
+            app:layout_constraintStart_toEndOf="@+id/tv_amount_of_water"
+            app:layout_constraintTop_toTopOf="@+id/tv_amount_of_water"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            android:src="@drawable/ic_objective"
+            android:contentDescription="@string/effective" />
+
+        <TextView
+            android:id="@+id/tv_amount_of_water"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="32dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toStartOf="@+id/iv_perc_of_completed_tasks"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toEndOf="@+id/iv_amount_of_water"
+            app:layout_constraintTop_toTopOf="@+id/iv_amount_of_water"
+            tools:text="2 л" />
+
+        <ImageView
+            android:id="@+id/iv_amount_of_water"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="32dp"
+            android:src="@drawable/ic_water"
+            app:layout_constraintEnd_toStartOf="@+id/tv_amount_of_water"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toEndOf="@+id/tv_duration_of_sleep"
+            app:layout_constraintTop_toTopOf="@+id/tv_duration_of_sleep"
+            android:contentDescription="@string/water" />
+
+        <TextView
+            android:id="@+id/tv_achievements"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/black"
+            android:visibility="invisible"
+            app:layout_constraintTop_toBottomOf="@+id/tv_data_training"
+            tools:layout_editor_absoluteX="4dp"
+            tools:text="Проснулся рано" />
+
+        <TextView
+            android:id="@+id/tv_thoughts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:visibility="invisible"
+            tools:text="Я усвол много уроков" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

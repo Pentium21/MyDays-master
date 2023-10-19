@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back"
+    tools:context="com.adelvanchik.mydays.Presentation.addEditDay.AddEditDayFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+
+            <ImageButton
+                android:id="@+id/btn_back_in_edit_day"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/btn_back"
+                android:paddingStart="12dp"
+                android:src="@drawable/ic_arrow_back" />
+
+            <TextView
+                android:id="@+id/tv_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                tools:text="22.01.2023" />
+
+
+            <ImageButton
+                android:id="@+id/btn_delete_day"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/delete"
+                android:src="@drawable/ic_delete" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="15dp"
+            android:text="@string/condition"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:id="@+id/toggle_health_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="50dp"
+            android:paddingTop="8dp"
+            app:singleSelection="true">
+
+            <ImageButton
+                android:id="@+id/btn_health_1"
+                style="@style/HealthStyle"
+                android:src="@drawable/ic_mood_1"
+                android:contentDescription="@string/smile" />
+
+            <ImageButton
+                android:id="@+id/btn_health_2"
+                style="@style/HealthStyle"
+                android:src="@drawable/ic_mood_2"
+                android:contentDescription="@string/smile" />
+
+            <ImageButton
+                android:id="@+id/btn_health_3"
+                style="@style/HealthStyle"
+                android:src="@drawable/ic_mood_3"
+                android:contentDescription="@string/smile" />
+
+            <ImageButton
+                android:id="@+id/btn_health_4"
+                style="@style/HealthStyle"
+                android:src="@drawable/ic_mood_4"
+                android:contentDescription="@string/smile" />
+
+            <ImageButton
+                android:id="@+id/btn_health_5"
+                style="@style/HealthStyle"
+                android:src="@drawable/ic_mood_5"
+                android:contentDescription="@string/smile" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="15dp"
+            android:text="@string/count_hours"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:paddingTop="8dp">
+
+            <HorizontalScrollView
+                android:id="@+id/scroll_view_sleep"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.button.MaterialButtonToggleGroup
+                    android:id="@+id/toggle_water_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:singleSelection="true">
+
+                    <Button
+                        android:id="@+id/btn_sleep_0"
+                        style="@style/SleepStyle"
+                        android:text="@string/zero" />
+
+                    <Button
+                        android:id="@+id/btn_sleep_1"
+                        style="@style/SleepStyle"
+                        android:text="@string/one" />
+
+                    <Button
+                        android:id="@+id/btn_sleep_2"
+                        style="@style/SleepStyle"
+                        android:text="@string/two" />
+
+                    <Button
+                        android:id="@+id/btn_sleep_3"
+                        style="@style/SleepStyle"
+                        android:text="@string/three" />
+
+                    <Button
+                        android:id="@+id/btn_sleep_4"
+                        style="@style/SleepStyle"
+                        android:text="@string/four" />
+
+                    <Button
+                        android:id="@+id/btn_sleep_5"
+                        style="@style/SleepStyle"
+                        android:text="@string/five" />
+
+                    <Button
+                        android:id="@+id/btn_sleep_6"
+                        style="@style/SleepStyle"
+                        android:text="@string/six" />
+
+                    <Button
+                        android:id="@+id/btn_sleep_7"
+                        style="@style/SleepStyle"
+                        android:text="@string/seven" />
+
+                    <Button
+                        android:id="@+id/btn_sleep_8"
+                        style="@style/SleepStyle"
+                        android:text="@string/eight" />
+
+                    <Button
+                        android:id="@+id/btn_sleep_9"
+                        style="@style/SleepStyle"
+                        android:text="@string/nine" />
+
+                    <Button
+                        android:id="@+id/btn_sleep_10"
+                        style="@style/SleepStyle"
+                        android:text="@string/ten" />
+
+                    <Button
+                        android:id="@+id/btn_sleep_11"
+                        style="@style/SleepStyle"
+                        android:text="@string/eleven" />
+
+                    <Button
+                        android:id="@+id/btn_sleep_12"
+                        style="@style/SleepStyle"
+                        android:text="@string/twelve" />
+
+                </com.google.android.material.button.MaterialButtonToggleGroup>
+
+            </HorizontalScrollView>
+
+            <ImageButton
+                android:id="@+id/btn_sleep_arrow_left"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/left"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_arrow_left" />
+
+            <ImageButton
+                android:id="@+id/btn_sleep_arrow_right"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/right"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_arrow_right" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="16dp"
+            android:text="@string/count_water"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_cup_1"
+                style="@style/CupStyle"
+                android:contentDescription="@string/cup" />
+
+            <ImageButton
+                android:id="@+id/btn_cup_2"
+                style="@style/CupStyle"
+                android:contentDescription="@string/cup" />
+
+            <ImageButton
+                android:id="@+id/btn_cup_3"
+                style="@style/CupStyle"
+                android:contentDescription="@string/cup" />
+
+            <ImageButton
+                android:id="@+id/btn_cup_4"
+                style="@style/CupStyle"
+                android:contentDescription="@string/cup" />
+
+            <ImageButton
+                android:id="@+id/btn_cup_5"
+                style="@style/CupStyle"
+                android:contentDescription="@string/cup" />
+
+            <ImageButton
+                android:id="@+id/btn_cup_6"
+                style="@style/CupStyle"
+                android:contentDescription="@string/cup" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_cup_7"
+                style="@style/CupStyle"
+                android:contentDescription="@string/cup" />
+
+            <ImageButton
+                android:id="@+id/btn_cup_8"
+                style="@style/CupStyle"
+                android:contentDescription="@string/cup" />
+
+            <ImageButton
+                android:id="@+id/btn_cup_9"
+                style="@style/CupStyle"
+                android:contentDescription="@string/cup" />
+
+            <ImageButton
+                android:id="@+id/btn_cup_10"
+                style="@style/CupStyle"
+                android:contentDescription="@string/cup" />
+
+            <ImageButton
+                android:id="@+id/btn_cup_11"
+                style="@style/CupStyle"
+                android:contentDescription="@string/cup" />
+
+            <ImageButton
+                android:id="@+id/btn_cup_12"
+                style="@style/CupStyle"
+                android:contentDescription="@string/cup" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/sum_count_water"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="8dp"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="16dp"
+            android:text="@string/count_important_day"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:gravity="center_horizontal"
+                android:text="@string/planing"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="@string/complete"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/centerShim"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:visibility="invisible" />
+
+            <HorizontalScrollView
+                android:id="@+id/scroll_task"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginHorizontal="16dp"
+                android:layout_toStartOf="@+id/centerShim"
+                android:paddingTop="5dp"
+                android:scrollbars="none">
+
+                <com.google.android.material.button.MaterialButtonToggleGroup
+                    android:id="@+id/toggle_count_tasks_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:singleSelection="true">
+
+                    <Button
+                        android:id="@+id/btn_count_tasks_1"
+                        style="@style/TasksStyle"
+                        android:text="@string/one" />
+
+                    <Button
+                        android:id="@+id/btn_count_tasks_2"
+                        style="@style/TasksStyle"
+                        android:text="@string/two" />
+
+                    <Button
+                        android:id="@+id/btn_count_tasks_3"
+                        style="@style/TasksStyle"
+                        android:text="@string/three" />
+
+                    <Button
+                        android:id="@+id/btn_count_tasks_4"
+                        style="@style/TasksStyle"
+                        android:text="@string/four" />
+
+                    <Button
+                        android:id="@+id/btn_count_tasks_5"
+                        style="@style/TasksStyle"
+                        android:text="@string/five" />
+
+                    <Button
+                        android:id="@+id/btn_count_tasks_6"
+                        style="@style/TasksStyle"
+                        android:text="@string/six" />
+
+                    <Button
+                        android:id="@+id/btn_count_tasks_7"
+                        style="@style/TasksStyle"
+                        android:text="@string/seven" />
+
+                    <Button
+                        android:id="@+id/btn_count_tasks_8"
+                        style="@style/TasksStyle"
+                        android:text="@string/eight" />
+
+                    <Button
+                        android:id="@+id/btn_count_tasks_9"
+                        style="@style/TasksStyle"
+                        android:text="@string/nine" />
+
+
+                </com.google.android.material.button.MaterialButtonToggleGroup>
+
+
+            </HorizontalScrollView>
+
+            <ImageButton
+                android:id="@+id/btn_tasks_arrow_left"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="-24dp"
+                android:layout_toStartOf="@+id/scroll_task"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_arrow_left"
+                android:contentDescription="@string/left" />
+
+            <ImageButton
+                android:id="@+id/btn_tasks_arrow_right"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="-26dp"
+                android:layout_toEndOf="@+id/scroll_task"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_arrow_right"
+                android:contentDescription="@string/right" />
+
+            <HorizontalScrollView
+                android:id="@+id/scroll_result_task"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginHorizontal="16dp"
+                android:layout_toEndOf="@+id/centerShim"
+                android:paddingTop="5dp"
+                android:scrollbars="none">
+
+                <com.google.android.material.button.MaterialButtonToggleGroup
+                    android:id="@+id/toggle_count_tasks_result_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:singleSelection="true">
+
+                    <Button
+                        android:id="@+id/btn_count_tasks_result_0"
+                        style="@style/TasksResultStyle"
+                        android:text="@string/zero" />
+
+                    <Button
+                        android:id="@+id/btn_count_tasks_result_1"
+                        style="@style/TasksResultStyle"
+                        android:text="@string/one" />
+
+                    <Button
+                        android:id="@+id/btn_count_tasks_result_2"
+                        style="@style/TasksResultStyle"
+                        android:text="@string/two" />
+
+                    <Button
+                        android:id="@+id/btn_count_tasks_result_3"
+                        style="@style/TasksResultStyle"
+                        android:text="@string/three" />
+
+                    <Button
+                        android:id="@+id/btn_count_tasks_result_4"
+                        style="@style/TasksResultStyle"
+                        android:text="@string/four" />
+
+                    <Button
+                        android:id="@+id/btn_count_tasks_result_5"
+                        style="@style/TasksResultStyle"
+                        android:text="@string/five" />
+
+                    <Button
+                        android:id="@+id/btn_count_tasks_result_6"
+                        style="@style/TasksResultStyle"
+                        android:text="@string/six" />
+
+                    <Button
+                        android:id="@+id/btn_count_tasks_result_7"
+                        style="@style/TasksResultStyle"
+                        android:text="@string/seven" />
+
+                    <Button
+                        android:id="@+id/btn_count_tasks_result_8"
+                        style="@style/TasksResultStyle"
+                        android:text="@string/eight" />
+
+                    <Button
+                        android:id="@+id/btn_count_tasks_result_9"
+                        style="@style/TasksResultStyle"
+                        android:text="@string/nine" />
+
+                </com.google.android.material.button.MaterialButtonToggleGroup>
+
+            </HorizontalScrollView>
+
+            <ImageButton
+                android:id="@+id/btn_result_tasks_arrow_left"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="-26dp"
+                android:layout_toStartOf="@+id/scroll_result_task"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_arrow_left"
+                android:contentDescription="@string/left" />
+
+            <ImageButton
+                android:id="@+id/btn_result_tasks_arrow_right"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="-24dp"
+                android:layout_toEndOf="@+id/scroll_result_task"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_arrow_right"
+                android:contentDescription="@string/right" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="16dp"
+            android:text="@string/achievements"
+
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/et_achievements"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="3dp"
+            android:hint="@string/achivements_something"
+            android:inputType="textMultiLine|textCapSentences"
+            android:maxLength="500"
+            android:maxLines="8"
+            android:minHeight="48dp"
+            android:paddingHorizontal="2dp"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:paddingTop="5dp"
+            android:scrollbars="vertical" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="16dp"
+            android:text="@string/thoughts"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_thoughts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="3dp"
+            android:hint="@string/thoughts_something"
+            android:inputType="textMultiLine|textCapSentences"
+            android:maxLength="2000"
+            android:maxLines="10"
+            android:minHeight="48dp"
+            android:textColorHint="@color/black"
+            android:paddingHorizontal="2dp"
+            android:textColor="@color/black"
+            android:paddingTop="5dp"
+            android:paddingBottom="12dp"
+            android:scrollbars="vertical" />
+
+
+        <ImageButton
+            android:id="@+id/btn_done_edit_day"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginVertical="16dp"
+            android:background="@color/green"
+            android:contentDescription="@string/done"
+            android:src="@drawable/ic_check" />
+    </LinearLayout>
+
+</ScrollView>
